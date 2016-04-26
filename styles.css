@@ -29,18 +29,18 @@ img {
 
 @media only screen  and (min-device-width : 1024px) {
 	/* For desktop */
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
+	.col-1-desktop {width: 8.33%;}
+	.col-2-desktop {width: 16.66%;}
+	.col-3-desktop {width: 25%;}
+	.col-4-desktop {width: 33.33%;}
+	.col-5-desktop {width: 41.66%;}
+	.col-6-desktop {width: 50%;}
+	.col-7-desktop {width: 58.33%;}
+	.col-8-desktop {width: 66.66%;}
+	.col-9-desktop {width: 75%;}
+	.col-10-desktop {width: 83.33%;}
+	.col-11-desktop {width: 91.66%;}
+	.col-12-desktop {width: 100%;}
 
 	[class*="col-"] {
     	padding: 15px;
@@ -59,6 +59,7 @@ img {
 	html, body {
 		padding: 0;
 		margin: 0;
+        height: 100%;
 		color: white;
 	}
 
@@ -69,11 +70,20 @@ img {
 	}
 
 	.company-name {
-		margin-top: 45px;
+		margin-top: 40px;
 		margin-right: 100px; 
 		vertical-align: top;
 		display: inline-block;
 	}
+    
+    .company-name a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .company-name a:visited {
+        color: white;
+    }
 
 	.company-logo {
 		display: inline;
@@ -84,6 +94,7 @@ img {
 	}
 
 	.nav {
+        font-weight: 300;
 		margin-top: 50px;
 		margin-left: 100px; 
 		vertical-align: top;
@@ -95,6 +106,30 @@ img {
 		display: inline;
 		list-style: none;
 	}
+    
+    .nav li a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav li a:visited {
+        color: white;
+    }
+    
+    .nav li a:hover {
+        text-decoration: underline;
+    }
+    
+    .wrapper {
+		color: white;
+		min-height: 100%;
+		position: relative;
+	}
+    
+    .content {
+        overflow: auto;
+        padding-bottom: 290px;
+    }
 
 	.cta-m {
 		display: none;
@@ -106,20 +141,220 @@ img {
 		background: url("images/stringswithRaymond.jpg");
 		background-size: cover;
 		background-position: center;
+        text-align: center;
+        color: white;
+        line-height: 90px;
+	}
+    
+    .cta-d h1 {
+        font-size: 5em;
+        padding-top: 150px;
+        text-shadow: 3px 3px black;
+    }
+    
+     .cta-d h2 {
+        font-size: 2em;
+        text-shadow: 3px 3px black;
+    }
+    
+    .cta-d a:link {
+        color: white;
+        padding: 10px;
+        outline: 5px solid white;
+        text-decoration: none;
+    }
+    
+    .cta-d a:visited {
+        color: white;
+    }
+    
+    .cta-d a:hover {
+        background: rgb(140,193,82);
+    }
+    
+    .row {
+        line-height: 35px;
+    }
+    
+    .page-marker {
+        width: 90%;
+        padding-top: 10px;
+        margin: 0 auto;
+        font-size: 60%;
+        color: #3BAFDA;
+    }
+    
+    .home-row-1 {
+        width: 90%;
+        line-height: 45px;
+        margin: 0 auto;
+    }
+    
+    .home-row-1 span {
+        font-style: italic;
+        font-size: 60%;
+        font-weight: 300;
+    }
+    
+    .col-4-desktop {
+        margin: 0 auto;
+    }
+    
+    .tablet-row {
+        width: 90%;
+		margin: 0 auto;
 	}
 
-}
-a[href $= 'extra items/BRO Repertoire.pdf'] {    
-    padding-right: 18px;
-    background: transparent url(images/icon_pdf.gif)
-                no-repeat center right;
-   
-}
-a[href $= 'extra items/nqei-rules-2010.pdf'] {
-    padding-right: 18px;
-    background: transparent
-    url(images/icon_pdf.gif)
-                no-repeat center right;
+	.fb-row {
+		float: left;
+	}
+
+	.home-row-2 {
+        line-height: 45px;
+		margin-left: 30%;
+	}
+    
+    .home-row-2 a:link {
+        color: white;
+    }
+    
+    .home-row-2 a:visited {
+        color: white;
+    }
+    
+    .home-row-2 a:hover {
+        color: #3BAFDA;
+    }
+    
+    #home-row-2-img {
+        margin: 0 auto;
+        width: 92%;
+        height: 230px;
+        background: url("images/windinaction.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .home-row-3 {
+        line-height: 45px;
+	}
+    
+    .home-row-3 a:link {
+        color: white;
+    }
+    
+    .home-row-3 a:visited {
+        color: white;
+    }
+    
+    .home-row-3 a:hover {
+        color: #3BAFDA;
+    }
+    
+    .form-row {
+        text-align: center;
+    }
+    
+    .home-form {
+        vertical-align: top;
+        background-color: #3BAFDA;
+    }
+    
+    .col-5-desktop {
+        display: inline-block;
+    }
+
+    .col-11-desktop {
+    	margin: 0 auto;
+    }
+    
+    .col-12-desktop {
+        display: block;
+        clear: both;
+    }
+    
+    .faq-row {
+        margin: 0 auto;
+    }
+    
+    .faq-row a:link {
+        color: white;
+    }
+    
+    .faq-row a:visited {
+        color: white;
+    }
+    
+    .footer {
+		font-size: 60%; 
+		padding: 10px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgb(140,193,82);
+	}
+    
+    .desktop-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .desktop-footer-section {
+        vertical-align: top;
+        width: 200px;
+        text-align: left;
+        display: inline-block;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+    .desktop-footer-section ul {
+        list-style: none;
+        font-size: 80%;
+    }
+    
+    .desktop-footer-section a:link {
+        color: #5e8726;
+        text-decoration: none;
+    }
+    
+    .desktop-footer-section a:visited {
+        color: #5e8726;
+    }
+    
+    .desktop-footer-section a:hover {
+        text-decoration: underline;
+    }
+    
+    .desktop-footer-section-copy {
+        vertical-align: top;
+        padding-top: 5px;
+        width: 300px;
+        text-align: left;
+        display: inline-block;
+        line-height: 2em;
+        font-size: 1.5em;
+    }
+    
+    .desktop-footer-section-copy a:link {
+        color: #5e8726;
+        text-decoration: none;
+    }
+    
+    .desktop-footer-section-copy a:visited {
+        color: #5e8726;
+    }
+    
+    .desktop-footer-section-copy a:hover {
+        text-decoration: underline;
+    }
+
+    .copyright {
+        display: none;
+    }
 }
 
 /*Mobile phone design */
@@ -216,6 +451,37 @@ a[href $= 'extra items/nqei-rules-2010.pdf'] {
 		height: 30em;
 		background: url("images/stringswithRaymond.jpg");
 		background-size: cover;
+        text-align: center;
+	}
+    
+    .cta-m h1 {
+        padding-top: 100px;
+        font-size: 3em;
+        text-shadow: 3px 3px black;
+    }
+    
+     .cta-m h2 {
+        font-size: 1em;
+        text-shadow: 3px 3px black;
+    }
+    
+    .cta-m a:link {
+        color: white;
+        padding: 10px;
+        outline: 3px solid white;
+        text-decoration: none;
+    }
+    
+    .cta-m a:visited {
+        color: white;
+    }
+    
+    .cta-m a:hover {
+        background: rgb(140,193,82);
+    }
+
+	.cta-d {
+		display: none;
 	}
 
 	.page-marker {
@@ -263,6 +529,12 @@ a[href $= 'extra items/nqei-rules-2010.pdf'] {
 		width: 90%;
 		margin: 0 auto;
 	}
+    
+    .home-row-2 {
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin: 0 auto;
+	}
 
 	.news-item {
 		width: 90%;
@@ -283,7 +555,7 @@ a[href $= 'extra items/nqei-rules-2010.pdf'] {
 		font-size: 60%;
 	}
 
-	.fb-page-mobile {
+	.fb-row {
 		margin: 0 auto;
 	}
 
@@ -307,6 +579,10 @@ a[href $= 'extra items/nqei-rules-2010.pdf'] {
 	.footer a:visited {
 		color: white;
 	}
+    
+    .desktop-footer {
+        display: none;
+    }
 
 }
 
@@ -488,17 +764,12 @@ a[href $= 'extra items/nqei-rules-2010.pdf'] {
 		background: rgb(140,193,82);
 		color: rgb(100,138,42);
 	}
-  
 
 	.footer a:link {
 		color: white;
 		text-decoration: none;
 	}	
 
-    h4{
-        text-align: center;
-    }
-    
 	.footer a:visited {
 		color: white;
 	}
