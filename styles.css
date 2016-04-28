@@ -17,6 +17,14 @@ body {
 	background: #4FC1E9;
 }
 
+.peoplenav {;
+	display: inline;
+	
+	left: 500px;
+}
+
+
+
 img {
 	max-width: 100%;
 }
@@ -177,11 +185,11 @@ img {
     }
     
     .page-marker {
-        width: 90%;
-        padding-top: 10px;
-        margin: 0 auto;
-        font-size: 60%;
-        color: #3BAFDA;
+	width: 90%;
+	padding-top: 10px;
+	margin: 0 auto;
+	font-size: 60%;
+	color: #FFFFFF;
     }
     
     .home-row-1 {
