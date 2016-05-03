@@ -17,6 +17,14 @@ body {
 	background: #4FC1E9;
 }
 
+.peoplenav {;
+	display: inline;
+	
+	left: 500px;
+}
+
+
+
 img {
 	max-width: 100%;
 }
@@ -68,7 +76,10 @@ img {
 		text-align: center;
 		padding: 30px;
 	}
-
+    .legal{
+        font-size: 13px;
+        font-style: italic;
+    }
 	.company-name {
 		margin-top: 40px;
 		margin-right: 100px; 
@@ -177,12 +188,14 @@ img {
     }
     
     .page-marker {
-        width: 90%;
-        padding-top: 10px;
-        margin: 0 auto;
-        font-size: 60%;
-        color: #3BAFDA;
+	width: 90%;
+	padding-top: 10px;
+	margin: 0 auto;
+	font-size: 60%;
+	color: #FFFFFF;
     }
+    
+    
     
     .home-row-1 {
         width: 90%;
@@ -272,6 +285,30 @@ img {
         display: block;
         clear: both;
     }
+    
+    a[href $= '.pdf'] {
+    padding-right: 20px;
+    background: url(images/icon_pdf.gif)
+                no-repeat center right;
+    }
+    a[href $= '.docx'] {
+    padding-right: 20px;
+    background: url(images/midasie1.gif)
+                no-repeat center right;
+    }
+    
+   .guitar {
+        width: 100%;
+        height: 335px;
+    }
+        
+    .faq {
+        text-align: center;
+    }
+    .list{
+        text-align: center;
+    }
+    
     
     .faq-row {
         margin: 0 auto;
@@ -764,6 +801,12 @@ img {
 		background: rgb(140,193,82);
 		color: rgb(100,138,42);
 	}
+    
+
+   
+
+
+
 
 	.footer a:link {
 		color: white;
