@@ -17,39 +17,10 @@ body {
 	background: #4FC1E9;
 }
 
-
-
-
-
-
-
-
 /* For mobile phones*/
 [class*="col-"] {
     width: 100%;
 }
-.lifememebers p {
-	position: static;
-	float: left;
-}
-.lifememebers h2 {
-	left: 500.px;
-	position: static;
-	left: 210px;
-	bottom: px;
-	clear: left;
-}
-.lifememebers img {
-	float: left;
-	clear: right;
-}
-
-
-
-
-
-
-
 
 @media only screen  and (min-device-width : 1024px) {
 	/* For desktop */
@@ -70,6 +41,19 @@ body {
     	padding: 15px;
 	}
 
+
+	.lifememebers p {
+		
+	}
+
+	.lifememebers h2 {
+		clear: left;
+	}
+
+	.lifememebers img {
+
+	}	
+
 	.row:after {
     	content: "";
     	clear: both;
@@ -85,6 +69,13 @@ body {
 		margin: 0;
         height: 100%;
 		color: white;
+	}
+
+	.asdf {
+		vertical-align: top;
+		display: inline-block;
+		text-align: justify;
+		line-height: 45px;
 	}
 
 	.header {
@@ -226,7 +217,7 @@ body {
     }
     
     .col-4-desktop {
-        margin: 0 auto;
+       
     }
     
     .tablet-row {
