@@ -17,23 +17,39 @@ body {
 	background: #4FC1E9;
 }
 
-.peoplenav {;
-	display: inline;
-	
-	left: 500px;
-}
 
 
 
-img {
-	max-width: 100%;
-}
+
+
 
 
 /* For mobile phones*/
 [class*="col-"] {
     width: 100%;
 }
+.lifememebers p {
+	position: static;
+	float: left;
+}
+.lifememebers h2 {
+	left: 500.px;
+	position: static;
+	left: 210px;
+	bottom: px;
+	clear: left;
+}
+.lifememebers img {
+	float: left;
+	clear: right;
+}
+
+
+
+
+
+
+
 
 @media only screen  and (min-device-width : 1024px) {
 	/* For desktop */
@@ -392,6 +408,27 @@ img {
     .copyright {
         display: none;
     }
+	
+.peoplenav ul {
+	display: inline;
+	/* [disabled]position: absolute; */
+	left: 50px;
+	padding-left: 20px;
+	color: #FFFFFF}
+	
+.peopleimg {
+	height: 450px;
+	width: 100%;
+
+}
+.peoplebody h1 {
+}
+    .peoplebody li {
+	position: absolute;
+	left: 50px;
+}
+
+}
 }
 
 /*Mobile phone design */
@@ -400,9 +437,16 @@ img {
 		height: 100%;
 	}
 
+
+
 	[class*="col-"] {
     	width: 90%;
 	}
+.peoplebodyli {
+	position: absolute;
+	left: 50px;
+}
+
 
 	.wrapper {
 		color: white;
