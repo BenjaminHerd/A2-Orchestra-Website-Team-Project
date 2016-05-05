@@ -41,18 +41,9 @@ body {
     	padding: 15px;
 	}
 
-
-	.lifememebers p {
-		
-	}
-
 	.lifememebers h2 {
 		clear: left;
 	}
-
-	.lifememebers img {
-
-	}	
 
 	.row:after {
     	content: "";
@@ -83,6 +74,7 @@ body {
 		text-align: center;
 		padding: 30px;
 	}
+
     .legal{
         font-size: 13px;
         font-style: italic;
@@ -195,14 +187,12 @@ body {
     }
     
     .page-marker {
-	width: 90%;
-	padding-top: 10px;
-	margin: 0 auto;
-	font-size: 60%;
-	color: #FFFFFF;
+		width: 90%;
+		padding-top: 10px;
+		margin: 0 auto;
+		font-size: 60%;
+		color: #3BAFDA;
     }
-    
-    
     
     .home-row-1 {
         width: 90%;
