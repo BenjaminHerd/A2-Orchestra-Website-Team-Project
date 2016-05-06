@@ -295,17 +295,27 @@ body {
     }
     
    .guitar {
-        width: 100%;
-        height: 335px;
+   		background: url("images/20160502_174745.gif"); 
+   		background-position: center;
+   		background-size: cover;
+        height: 500px;
+    }
+
+    .people-orchestra {
+    	background: url("images/Orchestra.jpg");
+    	background-position: bottom;
+   		background-size: cover;
+        height: 500px;
+
     }
         
     .faq {
         text-align: center;
     }
-    .list{
+
+    .list {
         text-align: center;
     }
-    
     
     .faq-row {
         margin: 0 auto;
