@@ -615,10 +615,16 @@ body {
 	}
 
 	.news-item {
+		padding-top: 20px;
 		width: 90%;
 		margin: 0 auto;
-		padding-bottom: 50px;
+		color: #333333;
+		font-size: 36px;
 	}
+	.news-image {
+		width: 20%;
+		height: 50em;
+		}
 
 	.news-item h2 {
 		font-weight: 300;
