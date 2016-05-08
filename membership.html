@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membership &#8226; Barrier Reef Orchestra</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/favicon.png"> 
+</head>
+<body>
+
+	<div class="wrapper">
+
+	<div id="start"></div>	
+
+	<div class="content">
+
+	<div class="header">
+
+		<div class="company-name">
+			<h1><a href="index.html">Barrier Reef Orchestra</a></h1>
+		</div>
+
+		<div class="company-logo">
+			<a href="index.html"><img src="images/seahorse-logo.png"></a>
+		</div>
+
+		<div class="nav">
+            <button class="dropbtn">Menu</button>
+            <ul class="nav-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li> 
+                <li><a href="supporterslist.html">Supporters</a></li> 
+                <li><a href="people.html">People</a></li> 
+                <li><a href="FAQ.html">FAQs</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+	<div class="row">
+		<div class="page-marker">
+			<h1>Membership</h1>
+		</div>
+	</div>
+
+    <div class="row">
+        <div class="form col-11-desktop">
+            <h1>Membership Application</h1>
+            <p>&nbsp;</p>
+            <h2>Membership details</h2>
+            <div class="col-10-desktop">
+            <label for="renewal-or-new">1. Are you renewing your membership or applying for a new membership?</label>
+            <form name="renewal-or-new">
+                <input type="radio" value="renewal" name="re"> Membership renewal<br>
+                <input type="radio" value="new" name="re"> New membership<br>
+            </form>
+            <script type="text/javascript">
+            var allRadios = document.getElementsByName('re');
+            var booRadio;
+            var x = 0;
+            for(x = 0; x < allRadios.length; x++){
+
+                allRadios[x].onclick = function() {
+                    if(booRadio == this){
+                        this.checked = false;
+                        booRadio = null;
+                    }else{
+                        booRadio = this;
+                    }
+                };
+            }
+            </script>
+            </div>
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="form col-11-desktop">
+            <div class="col-10-desktop">
+            <label for="membership-type">2. Please select desired membership type: </label>
+            <form name="membership-type">
+                <input type="radio" value="adult" name="re"> Adult<br>
+                <input type="radio" value="family" name="re"> Family<br>
+                <input type="radio" value="student" name="re"> Student<br>
+                <input type="radio" value="concession" name="re"> Concession<br>
+            </form>
+            <script type="text/javascript">
+            var allRadios = document.getElementsByName('re');
+            var booRadio;
+            var x = 0;
+            for(x = 0; x < allRadios.length; x++){
+
+                allRadios[x].onclick = function() {
+                    if(booRadio == this){
+                        this.checked = false;
+                        booRadio = null;
+                    }else{
+                        booRadio = this;
+                    }
+                };
+            }
+            </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form col-11-desktop">
+            <div class="col-10-desktop">
+            <label for="customer-number">3. Enter your student/concession number:  </label>
+            <form name="customer-number">
+                <input type="text">
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form col-11-desktop">
+            <h2>Applicant details</h2>
+            <div class="col-10-desktop">
+            
+            </div>
+        </div>    
+    </div>    
+
+	</div><!--End of Content-->
+
+	<div class="footer">
+        <div class="desktop-footer">
+            <div class="desktop-footer-section">
+                <p>About Us</p>
+                <ul>
+                    <li><a href="#">Repertoire And Rules</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Committee</a></li>
+                    <li><a href="#">Legal Information</a></li>
+                </ul>
+            </div>
+            <div class="desktop-footer-section">
+                <p>People</p>
+                <ul>
+                    <li><a href="#">Person name #1</a></li>
+                    <li><a href="#">Person name #2</a></li>
+                    <li><a href="#">Person name #3</a></li>
+                    <li><a href="#">Person name #4</a></li>
+                </ul>
+            </div>
+            <div class="desktop-footer-section">
+                <p>FAQ</p>
+                <ul>
+                    <li><a href="#">Join the Orchestra</a></li>
+                    <li><a href="#">Latest events</a></li>
+                    <li><a href="#">Purchase tickets</a></li>
+                    <li><a href="#">footer link</a></li>
+                </ul>
+            </div>
+            <div class="desktop-footer-section-copy">
+                <p>&copy; Barrier Reef Orchestra. All Rights reserved</p>
+		        <a href="#start" class="back-to-top">back to top</a>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>&copy; Barrier Reef Orchestra. All Rights reserved</p>
+		    <a href="#start">back to top</a>
+        </div>
+	</div>
+
+	</div><!--End of Wrapper-->
+
+</body>
+</html>

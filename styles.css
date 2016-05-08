@@ -75,9 +75,18 @@ body {
 		padding: 30px;
 	}
 
-    .legal{
+    .legal {
         font-size: 13px;
         font-style: italic;
+    }
+
+    .form-row {
+        text-align: center;
+    }
+    
+    .home-form {
+        vertical-align: top;
+        background-color: #3BAFDA;
     }
 	.company-name {
 		margin-top: 40px;
@@ -428,17 +437,14 @@ body {
 		height: 100%;
 	}
 
-
-
 	[class*="col-"] {
     	width: 90%;
 	}
+
 .peoplebodyli {
 	position: absolute;
 	left: 50px;
 }
-
-
 	.wrapper {
 		color: white;
 		min-height: 100%;
@@ -837,12 +843,6 @@ body {
 		color: rgb(100,138,42);
 	}
     
-
-   
-
-
-
-
 	.footer a:link {
 		color: white;
 		text-decoration: none;
