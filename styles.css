@@ -316,7 +316,6 @@ body {
     	background-position: bottom;
    		background-size: cover;
         height: 500px;
-
     }
         
     .faq {
@@ -442,11 +441,6 @@ body {
     	width: 90%;
 	}
 
-	.peoplebodyli {
-		position: absolute;
-		left: 50px;
-	}
-
 	.wrapper {
 		color: white;
 		min-height: 100%;
@@ -463,6 +457,11 @@ body {
 		display: inline-block;
 	}
 
+	.asdf img {
+		width: 100%;
+		height: auto;
+	}
+
 	.company-name a:link {
 		color: white;
 		text-decoration: none;
@@ -472,7 +471,6 @@ body {
 		color: white;
 	}
 
-	
 	.company-logo img {
 		display: none;
 	}
@@ -579,6 +577,13 @@ body {
 		padding-bottom: 30px;
 	}
 
+	.people-orchestra {
+    	background: url("images/Orchestra.jpg");
+    	background-position: bottom;
+   		background-size: cover;
+        height: 300px;
+    }
+
 	.row, .mobile-row {
 		line-height: 35px;
 		font-size: 62.5%;
@@ -620,27 +625,6 @@ body {
 		margin: 0 auto;
 	}
 
-	.news-item {
-		padding-top: 20px;
-		width: 90%;
-		margin: 0 auto;
-		color: #333333;
-		font-size: 36px;
-	}
-
-	.news-image {
-		width: 20%;
-		height: 50em;
-	}
-
-	.news-item h2 {
-		font-weight: 300;
-	}
-
-	.news-item img {
-		margin-top: 10px;
-	}
-
 	.home-row-1 span {
 		font-style: italic;
 		font-size: 60%;
@@ -648,6 +632,28 @@ body {
 
 	.content {
 		padding-bottom: 60px;
+	}
+
+	.news-img {
+		height: 300px;
+		background: url(images/News.jpg);
+		background-position: 10% 10%;
+		background-size: cover;
+	}
+
+	.guitar {
+   		background: url("images/20160502_174745.gif"); 
+   		background-position: center;
+   		background-size: cover;
+        height: 300px;
+    }
+
+	.news-item h2 {
+		font-weight: 300;
+	}
+
+	.news-item img {
+		width: 100%;
 	}
 
 	.fb-row {
