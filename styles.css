@@ -452,6 +452,11 @@ body {
 		padding: 30px;
 	}
 
+	.faq img {
+		width: 100%;
+	}
+
+
 	.company-name {
 		font-size: 55%;
 		display: inline-block;
