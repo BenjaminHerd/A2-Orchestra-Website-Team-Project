@@ -681,6 +681,14 @@ body {
         height: 300px;
     }
 
+    .top-image {
+        background: url("images/jenniferleahorch.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+
+    }
+
 	.news-item h2 {
 		font-weight: 300;
 	}
@@ -907,4 +915,6 @@ body {
 	.footer a:visited {
 		color: white;
 	}
+
+
 }
