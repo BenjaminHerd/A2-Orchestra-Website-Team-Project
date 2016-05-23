@@ -140,6 +140,14 @@ body {
         text-decoration: underline;
     }
     
+    #thanks{
+        text-align: center;
+    }
+    #member{
+        align-content: center;
+        text-align: center;
+    }
+    
     .wrapper {
 		color: white;
 		min-height: 100%;

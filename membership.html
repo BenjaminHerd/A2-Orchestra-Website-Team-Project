@@ -47,13 +47,14 @@
 			<h1>Membership</h1>
 		</div>
 	</div>
-
+<div id="member">
     <div class="row">
-        <div class="form col-11-desktop home-row-1">
+        
             <h1>Membership Application</h1>
             <p>&nbsp;</p>
             <h2>Membership details</h2>
-            <div class="col-10-desktop">
+        <p>&nbsp;</p>    
+        
             <label for="renewal-or-new">1. Are you renewing your membership or applying for a new membership?</label>
             <form name="renewal-or-new">
                 <input type="radio" value="renewal" name="re"> Membership renewal<br>
@@ -75,13 +76,12 @@
                 };
             }
             </script>
-            </div>
-        </div>
+            
     </div>
-
+<p>&nbsp;</p>
      <div class="row">
-        <div class="form col-11-desktop home-row-1">
-            <div class="col-10-desktop">
+        
+           
             <label for="membership-type">2. Please select desired membership type: </label>
             <form name="membership-type">
                 <input type="radio" value="adult" name="re"> Adult<br>
@@ -105,63 +105,97 @@
                 };
             }
             </script>
-            </div>
-        </div>
+            
+        
     </div>
-
+<p>&nbsp;</p>
     <div class="row">
-        <div class="form col-11-desktop home-row-1">
-            <div class="col-10-desktop">
+        
+            
             <label for="customer-number">3. Please enter your student/concession number:  </label>
             <form name="customer-number">
                 <input type="text">
             </form>
-            </div>
-        </div>
+           
+        
     </div>
-
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
     <div class="row">
-        <div class="form col-11-desktop home-row-1">
+        
             <h2>Applicant details</h2>
-            <div class="col-10-desktop">
             
-            </div>
-        </div>    
     </div> 
-
+<p>&nbsp;</p>
+    
     <div class="row">
-        <div class="form col-11-desktop home-row-1">
-            <div class="col-10-desktop">
-            <label for="customer-number">4. Please enter your title: </label>
+        
+            
+            <label for="customer-email">4. Please enter your primary email: </label>
+            <form name="customer-email">
+                <input type="text">
+            </form>
+            
+        
+    </div> 
+    
+    <p>&nbsp;</p>
+    
+    <div class="row">
+        
+            
+            <label for="customer-number">5. Please enter your title: </label>
             <form name="customer-number">
                 <input type="text">
             </form>
-            </div>
-        </div>
+            
+        
     </div> 
 
+    <p>&nbsp;</p>
+    
     <div class="row">
-        <div class="form col-11-desktop home-row-1">
-            <div class="col-10-desktop">
-            <label for="customer-number">5. Your last name(s): </label>
+        
+           
+            <label for="customer-number">6. Your last name(s): </label>
             <form name="customer-last-name">
                 <input type="text">
             </form>
             </div>
-        </div>
-    </div> 
+        <p>&nbsp;</p>
+     
 
      <div class="row">
-        <div class="form col-11-desktop home-row-1">
-            <div class="col-10-desktop">
-            <label for="customer-first-name">6. Your first name(s): </label>
+        
+            
+            <label for="customer-first-name">7. Your first name(s): </label>
             <form name="customer-number">
                 <input type="text">
             </form>
-            </div>
-        </div>
+            
+        
     </div>    
+<p>&nbsp;</p>
+    <!-- html button designing and calling the event in javascript -->
+        
+    <!--Reference: http://stackoverflow.com/questions/3682805/javascript-load-a-page-on-button-click-->
+        
+        <div id="btnThanks">
+            
+<input id="btntest" type="button" value="Submit" 
+       onclick="return btntest_onclick()" />
 
+<script language="javascript" type="text/javascript">
+function btntest_onclick() 
+{
+    window.location.href = "submission.html";
+}
+</script>
+    </div>
+
+    <p>&nbsp;</p>
+    
+        </div><!--end of member id tag-->
 	</div><!--End of Content-->
 
 	<div class="footer">
