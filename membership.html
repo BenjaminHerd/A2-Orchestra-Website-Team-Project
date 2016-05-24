@@ -55,6 +55,8 @@
             <h2>Membership details</h2>
         <p>&nbsp;</p>    
         
+   
+        
             <label for="renewal-or-new">1. Are you renewing your membership or applying for a new membership?</label>
             <form name="renewal-or-new">
                 <input type="radio" value="renewal" name="re"> Membership renewal<br>
@@ -112,7 +114,7 @@
     <div class="row">
         
             
-            <label for="customer-number">3. Please enter your student/concession number:  </label>
+            <label for="customer-number">3. Please enter your student/concession number (Optional if entered):  </label>
             <form name="customer-number">
                 <input type="text">
             </form>
@@ -129,14 +131,23 @@
 <p>&nbsp;</p>
     
     <div class="row">
-        
             
-            <label for="customer-email">4. Please enter your primary email: </label>
-            <form name="customer-email">
-                <input type="text">
-            </form>
-            
+         <script>
+            function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("*Field must be filled out");
+        return false;
+    }
+}
+        </script>
         
+        <!--reference: http://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js-->
+        <form name="myForm" action="submission.html"
+onsubmit="return validateForm()">
+4. *Please enter your Email:  <input type="text" name="fname">
+
+</form>
     </div> 
     
     <p>&nbsp;</p>
@@ -144,11 +155,11 @@
     <div class="row">
         
             
-            <label for="customer-number">5. Please enter your title: </label>
-            <form name="customer-number">
-                <input type="text">
-            </form>
-            
+           <form name="myForm" action="submission.html"
+onsubmit="return validateForm()">
+5. *Please enter your title:  <input type="text" name="fname">
+
+</form>
         
     </div> 
 
@@ -156,42 +167,23 @@
     
     <div class="row">
         
-           
-            <label for="customer-number">6. Your last name(s): </label>
-            <form name="customer-last-name">
-                <input type="text">
-            </form>
+           <form name="myForm" action="submission.html"
+onsubmit="return validateForm()">
+6. *Please enter your name:  <input type="text" name="fname">
+               <p>&nbsp;</p>
+<input type="submit" value="Submit">
+</form>
             </div>
         <p>&nbsp;</p>
      
 
-     <div class="row">
-        
-            
-            <label for="customer-first-name">7. Your first name(s): </label>
-            <form name="customer-number">
-                <input type="text">
-            </form>
-            
-        
-    </div>    
+    
 <p>&nbsp;</p>
     <!-- html button designing and calling the event in javascript -->
         
     <!--Reference: http://stackoverflow.com/questions/3682805/javascript-load-a-page-on-button-click-->
         
-        <div id="btnThanks">
-            
-<input id="btntest" type="button" value="Submit" 
-       onclick="return btntest_onclick()" />
-
-<script language="javascript" type="text/javascript">
-function btntest_onclick() 
-{
-    window.location.href = "submission.html";
-}
-</script>
-    </div>
+        
 
     <p>&nbsp;</p>
     
