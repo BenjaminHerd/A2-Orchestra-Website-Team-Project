@@ -12,6 +12,10 @@
 	margin: 0;
 	padding: 0;
 }
+.col-11-desktop.home-row-1 ul a {
+	color: #FFFFFF;
+}
+
 
 body {
 	background: #4FC1E9;
