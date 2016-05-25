@@ -6,6 +6,40 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png"> 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function (){
+            $(".membership-selection").change(function() {
+                // foo is the id of the other select box 
+                if ($(this).val() == "Play") {
+                    $("#foo1").show();
+                }else{
+                    $("#foo1").hide();
+                }
+
+                if ($(this).val() == "Renewal") {
+                    $("#foo2").show();
+                }else{
+                    $("#foo2").hide();
+                }
+
+                if ($(this).val() == "New") {
+                    $("#foo3").show();
+                }else{
+                    $("#foo3").hide();
+                }
+
+                if ($(this).val() == "Help") {
+                    $("#foo4").show();
+                }else{
+                    $("#foo4").hide();
+                }     
+            });
+        });
+    </script>
+
 </head>
 <body>
 
@@ -47,6 +81,96 @@
 			<h1>Membership</h1>
 		</div>
 	</div>
+
+    <div class="row">
+    <div class="col-11-desktop">
+                <div class="test-form col-5-desktop">
+                    <h1>Become A Part Of Barrier Reef Orchestra</h1>
+                    <div class="customer-details">
+                    <h2>Customer Details</h2>
+                        <form>
+                            <label for="title">Title</label>
+                            <select name="title">
+                                <option value="blank">Please Select...</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Dr">Dr</option>
+                                <option value="Other">Other...</option>
+                            </select><br>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" class="first-name">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" class="last-name">
+                            <label for="customer-email">E-mail Address</label>
+                            <input type="text" name="customer-email">
+                            <label for="address">Address</label>
+                            <input type="text" name="address">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" name="postcode">
+                            <label for="contact">Contact Number</label>
+                            <input type="text" name="contact">
+                        </form>
+                    </div>
+                    <div class="membership-details">
+                        <h2>Membership Details</h2>
+                            <form>
+                                <label for="membership-type">Type of Application</label>
+                                <select name="membership-type" class="membership-selection">
+                                    <option value="Blank">Please Select...</option>
+                                    <option value="Play">Play for the Orchestra</option>
+                                    <option value="Renewal">Renewal of Membership</option>
+                                    <option value="New">New Membership</option>
+                                    <option value="Help">Assist the Orchestra</option>
+                                </select>
+                                <div id="foo1" style="display:none;">
+                                <h3>Please fill in the required fields...</h3>
+                                <form>
+                                    <label for="instruments">Instrument(s) Played</label>
+                                    <input type="text" name="instruments" class="instruments"><br>
+                                    <label for="qualifications">Qualifications</label>
+                                    <input type="text" name="qualifications" class="qualifications"><br>
+                                    <label for="experience">Experience</label>
+                                    <input type="text" name="experience"><br>
+                                    <input type="submit" name="Submit" class="submit-button">
+                                </form>
+                                </div>
+                                <div id="foo2" style="display:none;">
+                                    <label for="first-name">First Name renew</label>
+                                    <input type="text" name="first-name" class="first-name"><br>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="last-name" class="last-name"><br>
+                                    <label for="customer-email">E-mail Address</label>
+                                    <input type="text" name="customer-email"><br>
+                                </div>
+                                <div id="foo3" style="display:none;">
+                                    <label for="first-name">First Name new</label>
+                                    <input type="text" name="first-name" class="first-name"><br>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="last-name" class="last-name"><br>
+                                    <label for="customer-email">E-mail Address</label>
+                                    <input type="text" name="customer-email"><br>
+                                </div>
+                                <div id="foo4" style="display:none;">
+                                    <label for="first-name">First Name assist</label>
+                                    <input type="text" name="first-name" class="first-name"><br>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="last-name" class="last-name"><br>
+                                    <label for="customer-email">E-mail Address</label>
+                                    <input type="text" name="customer-email"><br>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <div class="test-form col-2-desktop">
+                    <h1>col</h1>
+                </div>
+                <div class="test-form col-2-desktop">
+                    <h1>col</h1>
+                </div>
+            </div>
+    </div>
+<!--
 <div id="member">
     <div class="row">
         
@@ -136,7 +260,7 @@
 }
         </script>
         
-        <!--reference: http://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js-->
+        <reference: http://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js
         <form name="myForm" action="submission.html"
 onsubmit="return validateForm()">
 4. *Please enter your Email:  <input type="text" name="fname">
@@ -173,13 +297,14 @@ onsubmit="return validateForm()">
 
     
 <p>&nbsp;</p>
-    <!-- html button designing and calling the event in javascript -->
+    html button designing and calling the event in javascript
         
-    <!--Reference: http://stackoverflow.com/questions/3682805/javascript-load-a-page-on-button-click-->
+    reference: http://stackoverflow.com/questions/3682805/javascript-load-a-page-on-button-click
         
     <p>&nbsp;</p>
-    
-        </div><!--end of member id tag-->
+
+        </div>end of member id tag
+-->
 	</div><!--End of Content-->
 
 	<div class="footer">

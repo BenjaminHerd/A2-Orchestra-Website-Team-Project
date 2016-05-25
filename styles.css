@@ -468,6 +468,39 @@ body {
 	left: 50px;
 }
 
+.test-form {
+	display: inline-block;
+	vertical-align: top;
+	outline: 1px solid black;
+	line-height: 45px;
+ }
+
+ input {
+ 	width: 230px;
+ }
+
+ select {
+ 	width: 230px;
+ }
+
+ label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 230px;
+    margin-left: -15px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+ .customer-details {
+ 	margin: 0 auto;
+ }
+
+ .submit-button {
+ 	width: 100px;
+ }
+
 }
 
 /*Mobile phone design */
