@@ -73,6 +73,7 @@
 
             });
     });
+    
     </script>
 
     <script language="javascript" type="text/javascript">
@@ -82,229 +83,308 @@
     }
     </script>
 
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("form").submit(function () {
+
+          var clikedForm = $(this); // Select Form
+
+          if (clikedForm.find("[name='first-name']").val() == '') {
+            alert('Enter valid first name');
+            document.getElementById('first-name').style.borderColor = "red";
+            return false;
+        }
+        if (clikedForm.find("[name='last-name']").val() == '') {
+            alert('Enter valid last name');
+            document.getElementById('last-name').style.borderColor = "red";
+            return false;
+        }
+        if (clikedForm.find("[name='customer-email']").val() == '') {
+            alert('Enter valid last name');
+            document.getElementById('customer-email').style.borderColor = "red";
+            return false;
+        }
+        if (clikedForm.find("[name='address']").val() == '') {
+            alert('Enter valid last name');
+            document.getElementById('address').style.borderColor = "red";
+            return false;
+        }
+        if (clikedForm.find("[name='postcode']").val() == '') {
+            alert('Enter valid last name');
+            document.getElementById('postcode').style.borderColor = "red";
+            return false;
+        }
+        if (clikedForm.find("[name='contact']").val() == '') {
+            alert('Enter valid last name');
+            document.getElementById('contact').style.borderColor = "red";
+            return false;
+        }
+
+    });
+});
+</script>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["customer-email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        document.getElementById('customer-email').style.borderColor = "red";
+        return false;
+    }
+}
+</script>
+
+<!--
+    <script>
+
+    function validateForm() {
+        var x = document.forms["myForm"]["first-name"].value;
+        if (x == null || x == "") {
+            alert("Name must be filled out");
+            document.getElementById('first-name').style.borderColor = "red";
+            return false;
+        }
+
+        var x = document.forms["myForm"]["last-name"].value;
+        if (x == null || x == "") {
+            alert("Name must be filled out");
+            document.getElementById('last-name').style.borderColor = "red";
+            return false;
+        }
+    }
+    </script>
+-->
 </head>
 <body>
 
 	<div class="wrapper">
 
-       <div id="start"></div>	
+     <div id="start"></div>	
 
-       <div class="content">
+     <div class="content">
 
-           <div class="header">
+         <div class="header">
 
-              <div class="company-name">
-                 <h1><a href="index.html">Barrier Reef Orchestra</a></h1>
-             </div>
-
-             <div class="company-logo">
-                 <a href="index.html"><img src="images/seahorse-logo.png"></a>
-             </div>
-
-             <div class="nav">
-                <button class="dropbtn">Menu</button>
-                <ul class="nav-content">
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About Us</a></li>
-                   <li><a href="membership.html">Membership</a></li>
-                   <li><a href="gallery.html">Gallery</a></li>
-                   <li><a href="news.html">News</a></li> 
-                   <li><a href="events.html">Events</a></li>
-                   <li><a href="supporterslist.html">Supporters</a></li>
-                   <li><a href="people.html">People</a></li> 
-                   <li><a href="FAQ.html">FAQs</a></li>
-               </ul>
-           </div>
-
+          <div class="company-name">
+           <h1><a href="index.html">Barrier Reef Orchestra</a></h1>
        </div>
 
-       <div class="row">
-          <div class="page-marker">
-             <h1>Membership</h1>
-         </div>
-     </div>
+       <div class="company-logo">
+           <a href="index.html"><img src="images/seahorse-logo.png"></a>
+       </div>
 
-     <div class="row">
-        <div class="col-11-desktop form-mobile">
-            <div class="test-form col-5-desktop">
-                <h1>Become A Part Of Barrier Reef Orchestra</h1>
-                <p>North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra, by becoming a member you are supporting Townsville's Community Orchestra which was formed in 2000.</p>
-                <div class="customer-details">
-                    <h2>Personal Details</h2>
-                    <form>
-                        <label for="title">Title</label>
-                        <select name="title">
-                            <option value="blank">Please Select...</option>
-                            <option value="Mr">Mr</option>
-                            <option value="Mrs">Mrs</option>
-                            <option value="Ms">Ms</option>
-                            <option value="Dr">Dr</option>
-                            <option value="Other">Other...</option>
-                        </select><br>
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" class="first-name"><br>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" class="last-name"><br>
-                        <label for="customer-email">E-mail Address</label>
-                        <input type="text" name="customer-email"><br>
-                        <label for="address">Address</label>
-                        <input type="text" name="address"><br>
-                        <label for="postcode">Postcode</label>
-                        <input type="text" name="postcode"><br>
-                        <label for="contact">Contact Number</label>
-                        <input type="text" name="contact"><br>
-                    </form>
-                </div>
-                <div class="membership-details">
-                    <h2>Membership Details</h2>
-                    <form>
-                        <label for="membership-type">Type of Application</label>
-                        <select name="membership-type" class="membership-selection">
-                            <option value="Blank">Please Select...</option>
-                            <option value="Play">Play for the Orchestra</option>
-                            <option value="Renewal">Renewal of Membership</option>
-                            <option value="New">New Membership</option>
-                            <option value="Help">Assist the Orchestra</option>
-                        </select>
-                        <div id="foo1" style="display:none;">
-                            <h3>Please fill in the required fields...</h3>
-                            <form>
-                                <label for="instruments">Instrument(s) Played</label>
-                                <textarea rows="4" cols="50">
+       <div class="nav">
+        <button class="dropbtn">Menu</button>
+        <ul class="nav-content">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About Us</a></li>
+         <li><a href="membership.html">Membership</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="news.html">News</a></li> 
+         <li><a href="events.html">Events</a></li>
+         <li><a href="supporterslist.html">Supporters</a></li>
+         <li><a href="people.html">People</a></li> 
+         <li><a href="FAQ.html">FAQs</a></li>
+     </ul>
+ </div>
 
-                                </textarea><br>
-                                <label for="qualifications">Qualifications</label>
-                                <textarea rows="4" cols="50">
+</div>
 
-                                </textarea><br>
-                                <label for="experience">Experience</label>
-                                <textarea rows="4" cols="50">
+<div class="row">
+  <div class="page-marker">
+   <h1>Membership</h1>
+</div>
+</div>
 
-                                </textarea><br>
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                                <!--<input type="submit" name="Submit" class="submit-button">-->
-                            </form>
-                        </div>
-                        <div id="foo2" style="display:none;">
-                            <h3>Please fill in the required fields...</h3>
-                            <form>
-                                <label for="membership-type-selection">Membership Type</label>
-                                <select name="membership-type-selection" class="membership-type-selection">
-                                    <option value="Blank">Please Select...</option>
-                                    <option value="Adult">Adult</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Student">Student</option>
-                                    <option value="Concession">Concession</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div id="foo3" style="display:none;">
-                            <h3>Please fill in the required fields...</h3>
-                            <form>
-                                <label for="membership-type-selection">Membership Type</label>
-                                <select name="membership-type-selection" class="membership-type-selection">
-                                    <option value="Blank">Please Select...</option>
-                                    <option value="Adult">Adult</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Student">Student</option>
-                                    <option value="Concession">Concession</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div id="foo2-1" style="display:none;">
-                            <form action="submission.html">
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                            </form>
-                        </div>
-                        <div id="foo2-2" style="display:none;">
-                            <form action="submission.html">
-                                <label for="children">Family Member Information</label>
-                                <textarea rows="4" cols="50">First and last names and birthdate (dd/mm/yyyy)
-                                </textarea>
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                            </form>
-                        </div>
-                        <div id="foo4-1" style="display:none;">
-                            <form action="submission.html">
-                                <label for="student-num">Student Number</label> 
-                                <input type="text" name="student-num" class="student-num">
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                            </form>
-                        </div>
-                        <div id="foo4-2" style="display:none;">
-                            <form action="submission.html">
-                                <label for="concession-num">Concession Number</label> 
-                                <input type="text" name="concession-num" class="concession-num">
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                            </form>
-                        </div>
-                        <div id="foo4" style="display:none;">
-                            <h3>Please fill in the required fields...</h3>
-                            <h4>How can you help the Orchestra?</h4>
-                            <form action="submission.html">
-                                <label for="assist-options">I am interested in</label>
-                                <select name="assist-options" class="assist-options">
-                                    <option value="Blank">Please Select...</option>
-                                    <option value="Manage">Management/Administration</option>
-                                    <option value="Support">Player Support</option>
-                                    <option value="Fundraise">Fundraising</option>
-                                    <option value="Marketing">Marketing/Promotion</option>
-                                    <option value="Sponsor">Sponsorship</option>
-                                    <option value="Publishing">Desktop Publishing</option>
-                                </select>
-                                <div id="btnThanks">
-
-                                    <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
-
-                                </div>
-                            </form>
-                        </div>
-                    </form>
-                </div>
+<div class="row">
+    <div class="col-11-desktop form-mobile">
+        <div class="test-form col-5-desktop">
+            <h1>Become A Part Of Barrier Reef Orchestra</h1>
+            <p>North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra, by becoming a member you are supporting Townsville's Community Orchestra which was formed in 2000.</p>
+            <div class="customer-details">
+                <h2>Personal Details</h2>
+                <form name="myForm" onsubmit="return validateForm()">
+                    <label for="title">Title</label>
+                    <select name="title">
+                        <option value="blank">Please Select...</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Other">Other...</option>
+                    </select><br>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" class="first-name" id="first-name"><br>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" class="last-name" id="last-name"><br>
+                    <label for="customer-email">E-mail Address</label>
+                    <input type="text" name="customer-email"><br>
+                    <label for="address">Address</label>
+                    <input type="text" name="address"><br>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode"><br>
+                    <label for="contact">Contact Number</label>
+                    <input type="text" name="contact"><br>
+                    <p>Please submit before moving on to Membership Details</p>
+                    <input type="submit" value="Submit" class="customer-button">
+                </form>
             </div>
-            <div class="test-form col-4-desktop form-mobile-list">
-                <h1>Membership Prices</h1>
-                <ul>
-                    <li><span>Adult:</span> $30</li>
-                    <li><span>Family:</span> $60</li>
-                    <li><span>Full Time Student:</span> $15</li>
-                    <li><span>Under 18:</span> $15</li>
-                    <li><span>Concession:</span> $15</li>
-                </ul>
-                <p>Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
-            </div>
-            <div class="test-form col-custom form-mobile-list">
-                <h1>Contact Details</h1>
-                <h2>North Queensland Ensembles Inc.</h2>
-                <ul>
-                    <li><span>Address:</span><br> PO Box 576, Townsville 4810</li>
-                    <li><span>Telephone Number:</span> <br>07 4722 2789</li>
-                    <li><span>Email Address: </span><br><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">brotownsville@gmail.com</a></li>
-                    <li><span>ABN: </span><br> 73 365 249 138</li>
-                </ul>
-            </div>
+            <div class="membership-details">
+                <h2>Membership Details</h2>
+                <form>
+                    <label for="membership-type">Type of Application</label>
+                    <select name="membership-type" class="membership-selection">
+                        <option value="Blank">Please Select...</option>
+                        <option value="Play">Play for the Orchestra</option>
+                        <option value="Renewal">Renewal of Membership</option>
+                        <option value="New">New Membership</option>
+                        <option value="Help">Assist the Orchestra</option>
+                    </select>
+                    <div id="foo1" style="display:none;">
+                        <h3>Please fill in the required fields...</h3>
+                        <form>
+                            <label for="instruments">Instrument(s) Played</label>
+                            <textarea rows="4" cols="50">
+
+                            </textarea><br>
+                            <label for="qualifications">Qualifications</label>
+                            <textarea rows="4" cols="50">
+
+                            </textarea><br>
+                            <label for="experience">Experience</label>
+                            <textarea rows="4" cols="50">
+
+                            </textarea><br>
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                            <!--<input type="submit" name="Submit" class="submit-button">-->
+                        </form>
+                    </div>
+                    <div id="foo2" style="display:none;">
+                        <h3>Please fill in the required fields...</h3>
+                        <form>
+                            <label for="membership-type-selection">Membership Type</label>
+                            <select name="membership-type-selection" class="membership-type-selection">
+                                <option value="Blank">Please Select...</option>
+                                <option value="Adult">Adult</option>
+                                <option value="Family">Family</option>
+                                <option value="Student">Student</option>
+                                <option value="Concession">Concession</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="foo3" style="display:none;">
+                        <h3>Please fill in the required fields...</h3>
+                        <form>
+                            <label for="membership-type-selection">Membership Type</label>
+                            <select name="membership-type-selection" class="membership-type-selection">
+                                <option value="Blank">Please Select...</option>
+                                <option value="Adult">Adult</option>
+                                <option value="Family">Family</option>
+                                <option value="Student">Student</option>
+                                <option value="Concession">Concession</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="foo2-1" style="display:none;">
+                        <form>
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id="foo2-2" style="display:none;">
+                        <form>
+                            <label for="children">Family Member Information</label>
+                            <textarea rows="4" cols="50">First and last names and birthdate (dd/mm/yyyy)
+                            </textarea>
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id="foo4-1" style="display:none;">
+                        <form>
+                            <label for="student-num">Student Number</label> 
+                            <input type="text" name="student-num" class="student-num">
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id="foo4-2" style="display:none;">
+                        <form>
+                            <label for="concession-num">Concession Number</label> 
+                            <input type="text" name="concession-num" class="concession-num">
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id="foo4" style="display:none;">
+                        <h3>Please fill in the required fields...</h3>
+                        <h4>How can you help the Orchestra?</h4>
+                        <form>
+                            <label for="assist-options">I am interested in</label>
+                            <select name="assist-options" class="assist-options">
+                                <option value="Blank">Please Select...</option>
+                                <option value="Manage">Management/Administration</option>
+                                <option value="Support">Player Support</option>
+                                <option value="Fundraise">Fundraising</option>
+                                <option value="Marketing">Marketing/Promotion</option>
+                                <option value="Sponsor">Sponsorship</option>
+                                <option value="Publishing">Desktop Publishing</option>
+                            </select>
+                            <div id="btnThanks">
+
+                                <input id="btntest" type="button" value="Submit" onclick="return btntest_onclick()" class="submit-button">
+
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </form>
         </div>
     </div>
+    <div class="test-form col-4-desktop form-mobile-list">
+        <h1>Membership Prices</h1>
+        <ul>
+            <li><span>Adult:</span> $30</li>
+            <li><span>Family:</span> $60</li>
+            <li><span>Full Time Student:</span> $15</li>
+            <li><span>Under 18:</span> $15</li>
+            <li><span>Concession:</span> $15</li>
+        </ul>
+        <p>Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
+    </div>
+    <div class="test-form col-custom form-mobile-list">
+        <h1>Contact Details</h1>
+        <h2>North Queensland Ensembles Inc.</h2>
+        <ul>
+            <li><span>Address:</span><br> PO Box 576, Townsville 4810</li>
+            <li><span>Telephone Number:</span> <br>07 4722 2789</li>
+            <li><span>Email Address: </span><br><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">brotownsville@gmail.com</a></li>
+            <li><span>ABN: </span><br> 73 365 249 138</li>
+        </ul>
+    </div>
+</div>
+</div>
 
 </div><!--End of Content-->
 
@@ -313,14 +393,14 @@
         <div class="desktop-footer-section">
             <p>About Us</p>
             <ul>
-             <li><a href="extra items/BRO Repertoire.pdf">Repertoire</a></li>
-             <li><a href="extra items/nqei-rules-2010.pdf">Rules</a></li>
-             <li><a href="extra items/history.docx">History</a></li>
-             <li><a href="about.html#Committee">Committee</a></li>
-             <li><a href="about.html#legal">Copyright</a></li>
-         </ul>
-     </div>
-     <div class="desktop-footer-section">
+               <li><a href="extra items/BRO Repertoire.pdf">Repertoire</a></li>
+               <li><a href="extra items/nqei-rules-2010.pdf">Rules</a></li>
+               <li><a href="extra items/history.docx">History</a></li>
+               <li><a href="about.html#Committee">Committee</a></li>
+               <li><a href="about.html#legal">Copyright</a></li>
+           </ul>
+       </div>
+       <div class="desktop-footer-section">
         <p>People</p>
         <ul>
             <li><a href="authority.html">Authority</a></li>

@@ -263,6 +263,10 @@ body {
 		color: #3BAFDA;
 	}
 
+	.home-row-3 span {
+		font-weight: 700;
+	}
+
 	.home-row-3 {
 		line-height: 45px;
 	}
@@ -487,6 +491,48 @@ body {
 		font-weight: 300;
 		font-style: italic;
 	}
+    
+    .index-form {
+        line-height: 30px;
+    }
+        
+    .index-form input {
+		width: 230px;
+	}
+
+	.index-form select {
+		width: 230px;
+	}
+
+	.index-form textarea {
+		width: 230px;
+		display: inline-block;
+	}
+
+	.index-form label {
+		display: inline-block;
+		width: 280px;
+		margin-right: 10px;
+		text-align: right;
+	}
+
+	.index-form .customer-details {
+		margin: 0 auto;
+	}
+
+	.index-form .submit-button {
+		width: 100px;
+	}
+
+	.customer-details .customer-button  {
+		width: 100px;
+	}
+
+	.customer-details p {
+		font-size: 1em;
+		font-weight: 300;
+		font-style: italic;
+	}
 
 	.test-form input {
 		width: 230px;
@@ -518,6 +564,14 @@ body {
 	.test-form .submit-button {
 		width: 100px;
 	}
+    
+    .peoplebodyli ul {
+        list-style: none;
+    }
+
+    .peoplebodylist ul {
+        list-style: none;
+    }
 
 }
 
@@ -541,7 +595,7 @@ body {
 	}
     
     .index-form {
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 
 	.test-form {
@@ -549,6 +603,14 @@ body {
 		vertical-align: top;
 		line-height: 45px;
 	}
+    
+    .peoplebodyli {
+        line-height: 45px;
+    }
+    
+    .peoplebodyli ul {
+        list-style: none;
+    }
 
 	input {
 		width: 30%;
@@ -760,6 +822,10 @@ body {
 		padding-bottom: 50px;
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	.home-row-3 span {
+		font-weight: 700;
 	}
 
 	.home-row-2 {
