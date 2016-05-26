@@ -144,10 +144,11 @@ body {
 		text-decoration: underline;
 	}
 
-	#thanks{
+	#thanks {
 		text-align: center;
 	}
-	#member{
+
+	#member {
 		align-content: center;
 		text-align: center;
 	}
@@ -260,15 +261,6 @@ body {
 
 	.home-row-2 a:hover {
 		color: #3BAFDA;
-	}
-
-	#home-row-2-img {
-		margin: 0 auto;
-		width: 92%;
-		height: 230px;
-		background: url("images/windinaction.jpg");
-		background-size: cover;
-		background-position: center;
 	}
 
 	.home-row-3 {
@@ -462,34 +454,54 @@ body {
 		width: 100%;
 
 	}
+
 	.peoplebody h1 {
 	}
+
 	.peoplebody li {
 		position: absolute;
 		left: 50px;
 	}
 
 	.test-form {
+		/*outline: 1px solid black;*/
 		display: inline-block;
 		vertical-align: top;
-		outline: 1px solid black;
 		line-height: 45px;
 	}
 
-	input {
+	.test-form ul {
+		list-style: none;
+	}
+
+	.test-form span {
+		font-weight: 700;
+	}
+
+	.col-custom {
+		width: 24%;
+	}
+
+	.col-custom h2 {
+		font-size: 1em;
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	.test-form input {
 		width: 230px;
 	}
 
-	select {
+	.test-form select {
 		width: 230px;
 	}
 
-	textarea {
+	.test-form textarea {
 		width: 230px;
 		display: inline-block;
 	}
 
-	label {
+	.test-form label {
 		display: inline-block;
 		float: left;
 		clear: left;
@@ -499,11 +511,11 @@ body {
 		text-align: right;
 	}
 
-	.customer-details {
+	.test-form .customer-details {
 		margin: 0 auto;
 	}
 
-	.submit-button {
+	.test-form .submit-button {
 		width: 100px;
 	}
 
@@ -515,9 +527,56 @@ body {
 	html, body {
 		height: 100%;
 	}
-
+    
+    .form-mobile {
+        margin: 0 auto;
+    }
+    
+    .form-mobile-list ul {
+        list-style: none;
+    }
+    
 	[class*="col-"] {
 		width: 90%;
+	}
+    
+    .index-form {
+        padding-bottom: 60px;
+    }
+
+	.test-form {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 45px;
+	}
+
+	input {
+		width: 30%;
+	}
+
+	select {
+		width: 30%;
+	}
+
+	textarea {
+		width: 30%;
+		display: inline-block;
+	}
+
+	label {
+		display: inline-block;
+		float: left;
+		clear: left;
+		width: 30%;
+		text-align: right;
+	}
+
+	.customer-details {
+		margin: 0 auto;
+	}
+
+	.submit-button {
+		width: 100px;
 	}
 
 	.wrapper {
@@ -705,7 +764,7 @@ body {
 
 	.home-row-2 {
 		padding-top: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 90px;
 		margin: 0 auto;
 	}
 
